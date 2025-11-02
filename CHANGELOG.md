@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2025-11-02
+
 ### Added
 
 - Added Portrait for `Portraits_Aphrodite_01`
@@ -27,3 +29,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Glow effects for Aphrodite
 - Added Wiggle effects for Aphrodite
 - Added Glit effects for Hera
+
+[unreleased]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/11f3be2919933d70353618867846dbf39cbdcb17...1.1.1
