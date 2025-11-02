@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Changed the size of the `Portraits_Aphrodite_Annoyed_01` portrait to be correct
+
 ## [1.1.1] - 2025-11-02
 
 ### Added
