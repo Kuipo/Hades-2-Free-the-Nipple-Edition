@@ -214,6 +214,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         if animation_data.Name == "Portrait_Aphrodite_Displeased_01"
         or animation_data.Name == "Portrait_Aphrodite_Displeased_01_Exit" then
             animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Portraits_Aphrodite_Annoyed_01"
+            animation_data.Scale = 0.8 -- for some reason, without this the portrait is zoomed in and appears too big
         end
 
         -- -- Circe
