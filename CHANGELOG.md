@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added Portrait for `Portraits_Melinoe_Bath_01`
+- Added Portrait for `Portraits_Melinoe_Bath_Shock_01`
+- Added Portrait for `Portraits_Melinoe_Bath_Tears_01`
+- Added Codex artwork for Aphrodite
+
 ## [1.1.4] - 2025-11-02
 
 ## [1.1.3] - 2025-11-02

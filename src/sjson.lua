@@ -32,20 +32,20 @@ sjson.hook(gui_portraits_vfx_path, function(data)
             animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_PleasedFlushed_01"
         end
 
-        -- if animation_data.Name == "Portrait_Mel_Bath_01"
-        -- or animation_data.Name == "Portrait_Mel_Bath_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Melinoe_Bath_01"
-        -- end
+        if animation_data.Name == "Portrait_Mel_Bath_01"
+        or animation_data.Name == "Portrait_Mel_Bath_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_01""
+        end
 
-        -- if animation_data.Name == "Portrait_Mel_Bath_Shock_01"
-        -- or animation_data.Name == "Portrait_Mel_Bath_Shock_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Bath_Shock_01"
-        -- end
+        if animation_data.Name == "Portrait_Mel_Bath_Shock_01"
+        or animation_data.Name == "Portrait_Mel_Bath_Shock_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_Shock_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Mel_Bath_Tearful_01"
-        -- or animation_data.Name == "Portrait_Mel_Bath_Tearful_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Bath_Tearful_01"
-        -- end
+        if animation_data.Name == "Portrait_Mel_Bath_Tearful_01"
+        or animation_data.Name == "Portrait_Mel_Bath_Tearful_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_Tears_01"
+        end
 
         if animation_data.Name == "Portrait_Mel_Casual_01"
         or animation_data.Name == "Portrait_Mel_Casual_01_Exit" then
@@ -1055,3 +1055,14 @@ sjson.hook(gui_portraits_vfx_path, function(data)
     end
 end)
 
+-- Codex Portraits
+local gui_screens_vfx_path = rom.path.combine(rom.paths.Content, 'Game/Animations/GUI_Screens_VFX.sjson')
+sjson.hook(gui_screens_vfx_path, function(data)
+    for index, animation_data in ipairs(data.Animations) do
+
+        if animation_data.Name == "Codex_Portrait_Aphrodite" then
+            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\CodexPortrait_Aphrodite"
+        end
+
+    end
+end)
