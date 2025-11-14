@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added Portrait for `Portrait_Artemis_Default_01`
+- Added Portrait for `Portrait_Hera_Displeased_01`
+
+### Changed
+
+- Fixed a bug that was causing the mod to not load
+- Made the "in person" versions of the Hera portraits work with the new art 
+
 ## [1.1.5] - 2025-11-10
 
 ### Added

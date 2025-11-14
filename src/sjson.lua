@@ -9,67 +9,67 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         -- Melinoe
         if animation_data.Name == "Portrait_Mel_Default_01"
         or animation_data.Name == "Portrait_Mel_Default_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Default_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Vulnerable_01"
         or animation_data.Name == "Portrait_Mel_Vulnerable_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Vulnerable_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Vulnerable_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Intense_01"
         or animation_data.Name == "Portrait_Mel_Intense_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Intense_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Intense_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Pleased_01"
         or animation_data.Name == "Portrait_Mel_Pleased_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Pleased_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Pleased_01"
         end
 
         if animation_data.Name == "Portrait_Mel_PleasedFlushed_01"
         or animation_data.Name == "Portrait_Mel_PleasedFlushed_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_PleasedFlushed_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_PleasedFlushed_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Bath_01"
         or animation_data.Name == "Portrait_Mel_Bath_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_01""
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Bath_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Bath_Shock_01"
         or animation_data.Name == "Portrait_Mel_Bath_Shock_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_Shock_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Bath_Shock_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Bath_Tearful_01"
         or animation_data.Name == "Portrait_Mel_Bath_Tearful_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Bath_Tears_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Bath_Tearful_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Casual_01"
         or animation_data.Name == "Portrait_Mel_Casual_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Casual_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Casual_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Hesitant_01"
         or animation_data.Name == "Portrait_Mel_Hesitant_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Hesitant_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Hesitant_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Empathetic_01"
         or animation_data.Name == "Portrait_Mel_Empathetic_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Empathetic_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Empathetic_01"
         end
 
         if animation_data.Name == "Portrait_Mel_EmpatheticFlushed_01"
         or animation_data.Name == "Portrait_Mel_EmpatheticFlushed_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_EmpatheticFlushed_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_EmpatheticFlushed_01"
         end
 
         if animation_data.Name == "Portrait_Mel_Proud_01"
         or animation_data.Name == "Portrait_Mel_Proud_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portraits_Melinoe_Proud_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Portrait_Mel_Proud_01"
         end
 
         -- -- Chaos
@@ -167,14 +167,14 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         -- end
 
         -- -- Artemis
-        -- if animation_data.Name == "Portrait_Artemis_Default_01"
-        -- or animation_data.Name == "Portrait_Artemis_Default_01_Exit" then
-        --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Artemis_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Artemis_Default_01"
+        or animation_data.Name == "Portrait_Artemis_Default_01_Exit" then
+            animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Artemis_Default_01"
+        end
 
         if animation_data.Name == "Portrait_Artemis_Serious_01"
         or animation_data.Name == "Portrait_Artemis_Serious_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Artemis\\Portraits_Artemis_Serious_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Artemis\\Portrait_Artemis_Serious_01"
         end
 
         -- -- Athena
@@ -186,34 +186,34 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         -- -- Hera
         if animation_data.Name == "Portrait_Hera_Default_01"
         or animation_data.Name == "Portrait_Hera_Default_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portraits_Hera_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portrait_Hera_Default_01"
         end
 
-        -- if animation_data.Name == "Portrait_Hera_InPerson_01"
-        -- or animation_data.Name == "Portrait_Hera_Default_01_Exit" then
-        --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Hera_InPerson_01"
+        or animation_data.Name == "Portrait_Hera_Default_01_Exit" then
+            animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Default_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Hera_Displeased_01"
-        -- or animation_data.Name == "Portrait_Hera_Displeased_01_Exit" then
-        --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Displeased_01"
-        -- end
+        if animation_data.Name == "Portrait_Hera_Displeased_01"
+        or animation_data.Name == "Portrait_Hera_Displeased_01_Exit" then
+            animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Displeased_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Hera_InPerson_Displeased_01"
-        -- or animation_data.Name == "Portrait_Hera_InPerson_Displeased_01_Exit" then
-        --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Displeased_01"
-        -- end
+        if animation_data.Name == "Portrait_Hera_InPerson_Displeased_01"
+        or animation_data.Name == "Portrait_Hera_InPerson_Displeased_01_Exit" then
+            animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Hera_Displeased_01"
+        end
 
         -- -- Aphrodite
         if animation_data.Name == "Portrait_Aphrodite_Default_01"
         or animation_data.Name == "Portrait_Aphrodite_Default_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Portraits_Aphrodite_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Portrait_Aphrodite_Default_01"
             animation_data.Scale = 1.0 -- for some reason, without this the portrait is zoomed out and appears smaller
         end
 
         if animation_data.Name == "Portrait_Aphrodite_Displeased_01"
         or animation_data.Name == "Portrait_Aphrodite_Displeased_01_Exit" then
-            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Portraits_Aphrodite_Annoyed_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Portrait_Aphrodite_Displeased_01"
             animation_data.Scale = 0.8 -- for some reason, without this the portrait is zoomed in and appears too big
         end
 
@@ -774,9 +774,9 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Aphrodite_Default_01"
         -- end
 
-        -- if animation_data.Name == "ArtemisOverlay" then
-        --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Artemis_Default_01"
-        -- end
+        if animation_data.Name == "ArtemisOverlay" then
+            animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Artemis_Default_01"
+        end
 
         -- -- if animation_data.Name == "IcarusOverlay" then
         -- --     animation_data.FilePath = "Kuipo-FreeTheNippleEdition\\Portrait_Icarus_Default_01"
@@ -791,7 +791,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         -- end
 
         if animation_data.Name == "HeraOverlay" then
-            animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portraits_Hera_01"
+            animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portrait_Hera_Default_01"
         end
 
         -- if animation_data.Name == "HestiaOverlay" then
