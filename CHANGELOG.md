@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Fixed a few issues where the incorrect file would be referenced and the portrait would not appear
+
 ## [1.1.6] - 2025-11-14
 
 ### Added
