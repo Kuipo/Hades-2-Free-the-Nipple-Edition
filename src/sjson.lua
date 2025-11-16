@@ -1094,9 +1094,172 @@ local gui_screens_vfx_path = rom.path.combine(rom.paths.Content, 'Game/Animation
 sjson.hook(gui_screens_vfx_path, function(data)
     for index, animation_data in ipairs(data.Animations) do
 
+        -- Codex
+        -- if animation_data.Name == "Codex_Portrait_Dora" then
+        --     animation_data.FilePath = "Kuipo-RespriteCodex\\Codex_Portrait_Dora"
+        -- end
+
         if animation_data.Name == "Codex_Portrait_Aphrodite" then
-            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\CodexPortrait_Aphrodite"
+            animation_data.FilePath = "FreeTheNippleEdition-Aphrodite\\Codex_Portrait_Aphrodite"
         end
+
+        if animation_data.Name == "Codex_Portrait_Artemis" then
+            animation_data.FilePath = "FreeTheNippleEdition-Artemis\\Codex_Portrait_Artemis"
+        end
+
+        -- if animation_data.Name == "Codex_Portrait_Athena" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Athena\\Codex_Portrait_Athena"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Chaos" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Chaos\\Codex_Portrait_Chaos"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Circe" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Circe\\Codex_Portrait_Circe"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Demeter" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Demeter\\Codex_Portrait_Demeter"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Echo" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Echo\\Codex_Portrait_Echo"
+        -- end
+        -- -- What is this codex entry?
+        -- -- Codex_Portrait_Echo_Alt
+
+        -- if animation_data.Name == "Codex_Portrait_Eris" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Codex_Portrait_Eris"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Hec" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Codex_Portrait_Hec"
+        -- end
+
+        if animation_data.Name == "Codex_Portrait_Hera" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hera\\Codex_Portrait_Hera"
+        end
+
+        -- if animation_data.Name == "Codex_Portrait_Nyx" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Nyx\\Codex_Portrait_Nyx"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Selene" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Selene\\Codex_Portrait_Selene"
+        -- end
+        
+        -- if animation_data.Name == "Codex_Portrait_Hestia" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hestia\\Codex_Portrait_Hestia"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Medea" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Medea\\Codex_Portrait_Medea"
+        -- end
+
+        if animation_data.Name == "Codex_Portrait_Melinoe" then
+            animation_data.FilePath = "FreeTheNippleEdition-Melinoe\\Codex_Portrait_Melinoe"
+        end
+
+        -- if animation_data.Name == "Codex_Portrait_Nemesis" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Codex_Portrait_Nemesis"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Scylla" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Scylla\\Codex_Portrait_Scylla"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Arachne" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Arachne\\Codex_Portrait_Arachne"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Odysseus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Odysseus\\Codex_Portrait_Odysseus"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Moros" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Moros\\Codex_Portrait_Moros"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Heracles" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Heracles\\Codex_Portrait_Heracles"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Hermes" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hermes\\Codex_Portrait_Hermes"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Apollo" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Apollo\\Codex_Portrait_Apollo"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Hephaestus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hephaestus\\Codex_Portrait_Hephaestus"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Poseidon" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Poseidon\\Codex_Portrait_Poseidon"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Zeus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Zeus\\Codex_Portrait_Zeus"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Charon" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Charon\\Codex_Portrait_Charon"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Skelly" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Skelly\\Codex_Portrait_Skelly"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Dionysus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Dionysus\\Codex_Portrait_Dionysus"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Polyphemus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Polyphemus\\Codex_Portrait_Cyclops"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Ares" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Ares\\Codex_Portrait_Ares"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Narcissus" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Narcissus\\Codex_Portrait_Narcissus"
+        -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Achilles" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Achilles\\Codex_Portrait_Achilles"
+        -- end
+
+        -- -- if animation_data.Name == "Codex_Portrait_Prometheus" then
+        -- --     animation_data.FilePath = "FreeTheNippleEdition-Prometheus\\Codex_Portrait_Prometheus"
+        -- -- end
+
+        -- -- if animation_data.Name == "Codex_Portrait_Hades" then
+        -- --     animation_data.FilePath = "FreeTheNippleEdition-Hades\\Codex_Portrait_Hades"
+        -- -- end
+        -- -- -- What is this codex entry?
+        -- -- -- Codex_Portrait_Hades_Alt
+
+        -- -- if animation_data.Name == "Codex_Portrait_Icarus" then
+        -- --     animation_data.FilePath = "FreeTheNippleEdition-Icarus\\Codex_Portrait_Icarus"
+        -- -- end
+
+        -- if animation_data.Name == "Codex_Portrait_Persephone" then
+        --     animation_data.FilePath = "FreeTheNippleEdition-Persephone\\Codex_Portrait_Persephone"
+        -- end
+
+        -- -- if animation_data.Name == "Codex_Portrait_Zagreus" then
+        -- --     animation_data.FilePath = "FreeTheNippleEdition-Zagreus\\Codex_Portrait_Zagreus"
+        -- -- end
+
+        -- -- if animation_data.Name == "Codex_Portrait_Chronos" then
+        -- --     animation_data.FilePath = "FreeTheNippleEdition-Chronos\\Codex_Portrait_Chronos"
+        -- -- end
+        -- -- -- What is this codex entry?
+        -- -- -- Codex_Portrait_Chronos_Alt
 
     end
 end)
