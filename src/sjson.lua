@@ -1,6 +1,27 @@
 ---@meta _
 ---@diagnostic disable
 
+-- variable and function to see if the animation is disabled
+local disabled_animations = {
+    -- Melinoe - Because the bath portraits are modified, we need to block some of the animation effects
+    Portrait_Melinoe_BathWiggle1_In                 = true,
+    Portrait_Melinoe_BathWiggle1                    = true,
+    Portrait_Melinoe_BathWiggle2_In                 = true,
+    Portrait_Melinoe_BathWiggle2                    = true,
+    Portrait_Mel_Bath_Blink                         = true,
+    Portrait_Mel_BathGlow                           = true,
+    Portrait_MelShock_BathWiggle1_In                = true,
+    Portrait_MelShock_BathWiggle1                   = true,
+    Portrait_MelShock_Bath_Blink                    = true,
+    Portrait_MelShock_BathGlow                      = true,
+    Portrait_MelinoeTears_BathWiggle1_In            = true,
+    Portrait_MelinoeTears_BathWiggle1               = true,
+}
+
+function is_animation_disabled(str)
+    return disabled_animations[str] == true
+end
+
 -- Portraits
 local gui_portraits_vfx_path = rom.path.combine(rom.paths.Content, 'Game/Animations/GUI_Portraits_VFX.sjson')
 sjson.hook(gui_portraits_vfx_path, function(data)
@@ -170,6 +191,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         if animation_data.Name == "Portrait_Artemis_Default_01"
         or animation_data.Name == "Portrait_Artemis_Default_01_Exit" then
             animation_data.FilePath = "FreeTheNippleEdition-Artemis\\Portrait_Artemis_Default_01"
+            animation_data.Scale = 1.0 -- for some reason, without this the portrait is zoomed out and appears smaller
         end
 
         if animation_data.Name == "Portrait_Artemis_Serious_01"
@@ -1051,6 +1073,18 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         --     animation_data.FilePath = "FreeTheNippleEdition-Moros\\Portrait_Moros_Bath_01"
         -- end
         -- FOR DEBUG PURPOSES
+
+        -- block effects for now like blinking/moonglow/glint/wiggle etc.
+        if is_animation_disabled( animation_data.Name ) then
+            animation_data.FilePath = "Dev\\blank_invisible"
+            animation_data.EndFrame = 1
+            animation_data.Loop = false
+            animation_data.NumFrames = 1
+            animation_data.StartFrame = 1
+            animation_data.Slides = {
+                { DurationFrames = 1, FilePath = "Dev\\blank_invisible"}
+            }
+        end
 
     end
 end)

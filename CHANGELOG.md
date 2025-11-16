@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Disabled blink/glow/wiggle effects for Mel Bath artwork
+- Disabled blink/glow/wiggle effects for Mel Bath Shock artwork
+- Disabled wiggle effects for Mel Bath Tears artwork
+- Fixed small issue with the `Portrait_Artemis_Serious_01` image
+- Fixed an issue where the `Portrait_Artemis_Default_01` would appear too small.
+
 ## [1.1.7] - 2025-11-15
 
 ### Changed
