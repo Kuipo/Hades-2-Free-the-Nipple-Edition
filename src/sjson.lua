@@ -16,6 +16,11 @@ local disabled_animations = {
     Portrait_MelShock_BathGlow                      = true,
     Portrait_MelinoeTears_BathWiggle1_In            = true,
     Portrait_MelinoeTears_BathWiggle1               = true,
+    -- Nemesis - Because the bath portrait is modified, we need to block some of the animation effects
+    Portrait_Nemesis_BathWiggle1_In                 = true,
+    Portrait_Nemesis_BathWiggle1                    = true,
+    Portrait_Nemesis_Bath_Blink                     = true,
+    Portrait_Nemesis_BathGlow                       = true,
 }
 
 function is_animation_disabled(str)
@@ -122,10 +127,10 @@ sjson.hook(gui_portraits_vfx_path, function(data)
             animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Averted_01"
         end
 
-        -- if animation_data.Name == "Portrait_Nemesis_Bath_01"
-        -- or animation_data.Name == "Portrait_Nemesis_Bath_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Bath_01"
-        -- end
+        if animation_data.Name == "Portrait_Nemesis_Bath_01"
+        or animation_data.Name == "Portrait_Nemesis_Bath_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Bath_01"
+        end
 
         -- -- Selene
         -- if animation_data.Name == "Portrait_Selene_Default_01"
@@ -283,26 +288,35 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         -- end
 
         -- -- Hecate
-        -- if animation_data.Name == "Portrait_Hec_Default_01"
-        -- or animation_data.Name == "Portrait_Hec_Default_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Portrait_Hec_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Hec_Default_01"
+        or animation_data.Name == "Portrait_Hec_Default_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Default_01"
+        end
 
-        -- -- Need an image with the mask still on for this one, in the meantime just show without the mask
         -- if animation_data.Name == "Portrait_Hec_Bath_01"
         -- or animation_data.Name == "Portrait_Hec_Bath_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Portrait_Hec_Bath_01"
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Bath_01"
         -- end
 
         -- if animation_data.Name == "Portrait_Hec_Bath_Unveiled_01"
         -- or animation_data.Name == "Portrait_Hec_Bath_Unveiled_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Portrait_Hec_Bath_01"
+        --     animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Bath_01"
         -- end
 
-        -- -- if animation_data.Name == "Portrait_Hec_Baby_01"
-        -- -- or animation_data.Name == "Portrait_Hec_Baby_01_Exit" then
-        -- --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Portrait_Hec_Baby_01"
-        -- -- end
+        if animation_data.Name == "Portrait_Hec_Baby_01"
+        or animation_data.Name == "Portrait_Hec_Baby_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Baby_01"
+        end
+
+        if animation_data.Name == "Portrait_Hec_Averted_01"
+        or animation_data.Name == "Portrait_Hec_Averted_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Averted_01"
+        end
+
+        if animation_data.Name == "Portrait_Hec_Frozen_01"
+        or animation_data.Name == "Portrait_Hec_Frozen_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Frozen_01"
+        end
 
         -- -- Eris
         -- if animation_data.Name == "Portrait_Eris_Default_01"
@@ -1133,9 +1147,9 @@ sjson.hook(gui_screens_vfx_path, function(data)
         --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Codex_Portrait_Eris"
         -- end
 
-        -- if animation_data.Name == "Codex_Portrait_Hec" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Hec\\Codex_Portrait_Hec"
-        -- end
+        if animation_data.Name == "Codex_Portrait_Hec" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Codex_Portrait_Hec"
+        end
 
         if animation_data.Name == "Codex_Portrait_Hera" then
             animation_data.FilePath = "FreeTheNippleEdition-Hera\\Codex_Portrait_Hera"
