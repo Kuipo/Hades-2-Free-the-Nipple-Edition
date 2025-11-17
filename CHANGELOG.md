@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.11] - 2025-11-17
+
 ### Added
 
 - Added Portrait for `Portrait_Nemesis_Bath_01`
@@ -106,7 +108,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Wiggle effects for Aphrodite
 - Added Glit effects for Hera
 
-[unreleased]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.10...HEAD
+[unreleased]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.11...HEAD
+[1.1.11]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.10...1.1.11
 [1.1.10]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.9...1.1.10
 [1.1.9]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.8...1.1.9
 [1.1.8]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.7...1.1.8

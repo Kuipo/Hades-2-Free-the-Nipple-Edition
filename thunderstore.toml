@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "FreeTheNippleEdition"
 name = "FreeTheNippleEdition"
-versionNumber = "1.1.10"
+versionNumber = "1.1.11"
 description = "Replaces most of the female 2D artwork in the game with NSFW images"
 websiteUrl = "https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition"
 containsNsfwContent = true
