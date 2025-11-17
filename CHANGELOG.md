@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added Portrait for `Portrait_Nemesis_Default_01`
+- Added Portrait for `Portrait_Nemesis_Flushed_01`
+- Added Portrait for `Portrait_Nemesis_Averted_01`
+
 ## [1.1.9] - 2025-11-16
 
 ### Added

@@ -106,21 +106,21 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         --     animation_data.FilePath = "FreeTheNippleEdition-Chaos\\Portrait_Chaos_Default_01"
         -- end
 
-        -- -- Nemesis
-        -- if animation_data.Name == "Portrait_Nemesis_Default_01"
-        -- or animation_data.Name == "Portrait_Nemesis_Default_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Default_01"
-        -- end
+        -- Nemesis
+        if animation_data.Name == "Portrait_Nemesis_Default_01"
+        or animation_data.Name == "Portrait_Nemesis_Default_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Default_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Nemesis_Flushed_01"
-        -- or animation_data.Name == "Portrait_Nemesis_Flushed_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Nemesis_Flushed_01"
+        or animation_data.Name == "Portrait_Nemesis_Flushed_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Flushed_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Nemesis_Averted_01"
-        -- or animation_data.Name == "Portrait_Nemesis_Averted_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Averted_01"
-        -- end
+        if animation_data.Name == "Portrait_Nemesis_Averted_01"
+        or animation_data.Name == "Portrait_Nemesis_Averted_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Nemesis\\Portrait_Nemesis_Averted_01"
+        end
 
         -- if animation_data.Name == "Portrait_Nemesis_Bath_01"
         -- or animation_data.Name == "Portrait_Nemesis_Bath_01_Exit" then

@@ -12,7 +12,8 @@ modutil.mod.Path.Wrap("SetupMap", function(base)
         "FreeTheNippleEdition-Aphrodite",
         "FreeTheNippleEdition-Artemis",
         "FreeTheNippleEdition-Hera",
-        "FreeTheNippleEdition-Melinoe"
+        "FreeTheNippleEdition-Melinoe",
+        "FreeTheNippleEdition-Nemesis",
     }})
     base()
 end)
