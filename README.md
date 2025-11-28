@@ -10,7 +10,8 @@ This is currently developed for the 1.1 release of Hades 2. NOTE: You must be us
 
 ## Features
 
-- Replaces 14 character portraits for the female characters in the game
+- Replaces 36 character portraits for the female characters
+- Replaces 1 character portraits for the female characters
 - Modifies some of the effects such as glint, glow, and wiggle where appropriate to adjust for the changes in the armor
 
 ## Install
@@ -22,3 +23,4 @@ This is currently developed for the 1.1 release of Hades 2. NOTE: You must be us
 ## ToDo
 
 1. Add missing female characters
+2. Add missing male characters
