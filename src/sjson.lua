@@ -21,6 +21,11 @@ local disabled_animations = {
     Portrait_Nemesis_BathWiggle1                    = true,
     Portrait_Nemesis_Bath_Blink                     = true,
     Portrait_Nemesis_BathGlow                       = true,
+    -- Odysseus - Because the bath portrait is modified, we need to block some of the animation effects
+    Portrait_Odysseus_BathWiggle1_In                = true,
+    Portrait_Odysseus_BathWiggle1                   = true,
+    Portrait_Odysseus_Bath_Blink                    = true,
+    Portrait_Odysseus_BathGlow                      = true,
 }
 
 function is_animation_disabled(str)
@@ -224,11 +229,13 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         if animation_data.Name == "Portrait_Hera_Displeased_01"
         or animation_data.Name == "Portrait_Hera_Displeased_01_Exit" then
             animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portrait_Hera_Displeased_01"
+            animation_data.Scale = 1.0 -- experimental fix for this portrait to prevent it from appearing zoomed/smaller. Haven't tested in game yet
         end
 
         if animation_data.Name == "Portrait_Hera_InPerson_Displeased_01"
         or animation_data.Name == "Portrait_Hera_InPerson_Displeased_01_Exit" then
             animation_data.FilePath = "FreeTheNippleEdition-Hera\\Portrait_Hera_Displeased_01"
+            animation_data.Scale = 1.0 -- experimental fix for this portrait to prevent it from appearing zoomed/smaller. Haven't tested in game yet
         end
 
         -- -- Aphrodite
@@ -293,10 +300,10 @@ sjson.hook(gui_portraits_vfx_path, function(data)
             animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Default_01"
         end
 
-        -- if animation_data.Name == "Portrait_Hec_Bath_01"
-        -- or animation_data.Name == "Portrait_Hec_Bath_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Bath_01"
-        -- end
+        if animation_data.Name == "Portrait_Hec_Bath_01"
+        or animation_data.Name == "Portrait_Hec_Bath_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Bath_01"
+        end
 
         -- if animation_data.Name == "Portrait_Hec_Bath_Unveiled_01"
         -- or animation_data.Name == "Portrait_Hec_Bath_Unveiled_01_Exit" then
@@ -318,46 +325,46 @@ sjson.hook(gui_portraits_vfx_path, function(data)
             animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Frozen_01"
         end
 
-        -- -- Eris
-        -- if animation_data.Name == "Portrait_Eris_Default_01"
-        -- or animation_data.Name == "Portrait_Eris_Default_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
-        -- end
+        -- Eris
+        if animation_data.Name == "Portrait_Eris_Default_01"
+        or animation_data.Name == "Portrait_Eris_Default_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_Flushed_01"
-        -- or animation_data.Name == "Portrait_Eris_Flushed_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_Flushed_01"
+        or animation_data.Name == "Portrait_Eris_Flushed_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_FiredUp_01"
-        -- or animation_data.Name == "Portrait_Eris_FiredUp_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_FiredUp_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_FiredUp_01"
+        or animation_data.Name == "Portrait_Eris_FiredUp_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_FiredUp_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_Unsure_01"
-        -- or animation_data.Name == "Portrait_Eris_Unsure_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Unsure_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_Unsure_01"
+        or animation_data.Name == "Portrait_Eris_Unsure_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Unsure_01"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_Default_02"
-        -- or animation_data.Name == "Portrait_Eris_Default_02_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_Default_02"
+        or animation_data.Name == "Portrait_Eris_Default_02_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_02"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_Flushed_02"
-        -- or animation_data.Name == "Portrait_Eris_Flushed_02_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Default_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_Flushed_02"
+        or animation_data.Name == "Portrait_Eris_Flushed_02_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Flushed_02"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_FiredUp_02"
-        -- or animation_data.Name == "Portrait_Eris_FiredUp_02_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_FiredUp_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_FiredUp_02"
+        or animation_data.Name == "Portrait_Eris_FiredUp_02_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_FiredUp_02"
+        end
 
-        -- if animation_data.Name == "Portrait_Eris_Unsure_02"
-        -- or animation_data.Name == "Portrait_Eris_Unsure_02_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Unsure_01"
-        -- end
+        if animation_data.Name == "Portrait_Eris_Unsure_02"
+        or animation_data.Name == "Portrait_Eris_Unsure_02_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Portrait_Eris_Unsure_02"
+        end
 
         -- if animation_data.Name == "Portrait_Eris_Bath_01"
         -- or animation_data.Name == "Portrait_Eris_Bath_01_Exit" then
@@ -413,10 +420,10 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         --     animation_data.FilePath = "FreeTheNippleEdition-Odysseus\\Portrait_Odysseus_Thoughtful_01"
         -- end
 
-        -- if animation_data.Name == "Portrait_Odysseus_Bath_01"
-        -- or animation_data.Name == "Portrait_Odysseus_Bath_01_Exit" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Odysseus\\Portrait_Odysseus_Bath_01"
-        -- end
+        if animation_data.Name == "Portrait_Odysseus_Bath_01"
+        or animation_data.Name == "Portrait_Odysseus_Bath_01_Exit" then
+            animation_data.FilePath = "FreeTheNippleEdition-Odysseus\\Portrait_Odysseus_Bath_01"
+        end
 
         -- -- Moros
         -- if animation_data.Name == "Portrait_Moros_Default_01"
@@ -865,6 +872,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
 
 
         -- Glint Replacements
+        -- Hera Effects
         if animation_data.Name == "Portrait_Hera_Glint" then
             animation_data.FilePath = "FreeTheNippleEdition-Hera\\Glint\\HeraGlint"
             Slides =
@@ -1067,6 +1075,174 @@ sjson.hook(gui_portraits_vfx_path, function(data)
             }
         end
 
+        -- Eris Effects
+        if animation_data.Name == "Portrait_ErisAOL_MoonGlow_In" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0001"
+        end
+        if animation_data.Name == "Portrait_ErisAOL_MoonGlow" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow"
+            Slides =
+            {
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0001"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0002"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0003"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0004"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0005"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0006"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0007"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0008"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0009"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0010"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0011"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0012"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0013"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0014"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0015"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0016"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0017"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0018"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0019"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0020"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0021"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0022"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0023"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0024"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0025"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0026"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0027"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0028"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0029"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0030"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0031"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0032"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0033"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0034"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0035"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0036"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0037"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0038"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0039"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0040"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0041"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0042"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0043"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0044"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0045"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0046"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0047"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0048"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0049"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLMoonGlow\\ErisAOLMoonGlow0050"},
+            }
+        end
+        if animation_data.Name == "Portrait_ErisAOL_Wiggle2_In" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20001"
+        end
+        if animation_data.Name == "Portrait_ErisAOL_Wiggle2" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle2"
+            Slides =
+            {
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20001"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20002"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20003"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20004"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20005"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20006"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20007"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20008"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20009"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20010"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20011"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20012"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20013"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20014"},
+                { FilePath = "FreeTheNippleEdition-Eris\\AOLWiggle\\ErisAOLWiggle20015"},
+            }
+        end
+        if animation_data.Name == "Portrait_Eris_MoonGlow_In" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0001"
+        end
+        if animation_data.Name == "Portrait_Eris_MoonGlow" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow"
+            Slides =
+            {
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0001"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0002"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0003"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0004"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0005"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0006"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0007"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0008"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0009"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0010"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0011"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0012"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0013"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0014"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0015"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0016"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0017"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0018"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0019"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0020"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0021"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0022"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0023"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0024"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0025"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0026"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0027"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0028"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0029"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0030"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0031"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0032"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0033"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0034"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0035"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0036"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0037"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0038"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0039"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0040"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0041"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0042"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0043"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0044"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0045"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0046"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0047"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0048"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0049"},
+                { FilePath = "FreeTheNippleEdition-Eris\\MoonGlow\\ErisMoonGlow0050"},
+            }
+        end
+        if animation_data.Name == "Portrait_Eris_Wiggle2_In" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20001"
+        end
+        if animation_data.Name == "Portrait_Eris_Wiggle2" then
+            animation_data.FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle2"
+            Slides =
+            {
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20001"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20002"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20003"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20004"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20005"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20006"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20007"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20008"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20009"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20010"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20011"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20012"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20013"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20014"},
+                { FilePath = "FreeTheNippleEdition-Eris\\Wiggle\\ErisWiggle20015"},
+            }
+        end
+
         --offset note
         -- y  -up    +down
         -- x  -left  +right
@@ -1081,7 +1257,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         --     animation_data.FilePath = "FreeTheNippleEdition-Moros\\Portrait_Moros_Bath_01"
         -- end
         -- if animation_data.Name == "Portrait_Eris_Default_01" then
-        --     animation_data.FilePath = "FreeTheNippleEdition-Zeuz\\Portrait_Zeus_Pleased_01"
+        --     animation_data.FilePath = "FreeTheNippleEdition-Odysseus\\Portrait_Odysseus_Bath_01"
         -- end
         -- if animation_data.Name == "Portrait_Nemesis_Default_01" then
         --     animation_data.FilePath = "FreeTheNippleEdition-Moros\\Portrait_Moros_Bath_01"

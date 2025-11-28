@@ -7,40 +7,72 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added portrait for `Portrait_Odysseus_Bath_01`
+- Disabled blink/glow/wiggle effects for Odysseus Bath artwork
+- Added portrait for `Portrait_Hec_Bath_01`
+- Added portrait for `Portrait_Eris_Default_01`
+- Added portrait for `Portrait_Eris_Default_02` (Aspect of Lucifer)
+- Added portrait for `Portrait_Eris_FiredUp_01`
+- Added portrait for `Portrait_Eris_FiredUp_02` (Aspect of Lucifer)
+- Added portrait for `Portrait_Eris_Flushed_01`
+- Added portrait for `Portrait_Eris_Flushed_02` (Aspect of Lucifer)
+- Added portrait for `Portrait_Eris_Unsure_01`
+- Added portrait for `Portrait_Eris_Unsure_02` (Aspect of Lucifer)
+- Added moonglow effects for Eris
+- Added moonglow effects for Eris (Aspect of Lucifer)
+- Added wiggle effects for Eris
+- Added wiggle effects for Eris (Aspect of Lucifer)
+
+### Changed
+
+- Updated the portrait for `Portraits_Melinoe_01`
+- Updated the portrait for `Portraits_Melinoe_Casual_01`
+- Updated the portrait for `Portraits_Melinoe_Empathetic_01`
+- Updated the portrait for `Portraits_Melinoe_EmpatheticFlushed_01`
+- Updated the portrait for `Portraits_Melinoe_Hesitant_01`
+- Updated the portrait for `Portraits_Melinoe_Intense_01`
+- Updated the portrait for `Portraits_Melinoe_Pleased_01`
+- Updated the portrait for `Portraits_Melinoe_PleasedFlushed_01`
+- Updated the portrait for `Portraits_Melinoe_Proud_01`
+- Updated the portrait for `Portraits_Melinoe_Vulnerable_01`
+
+
 ## [1.1.11] - 2025-11-17
 
 ### Added
 
-- Added Portrait for `Portrait_Nemesis_Bath_01`
-- Added Portrait for `Portrait_Hec_Default_01`
-- Added Portrait for `Portrait_Hec_Averted_01`
-- Added Portrait for `Portrait_Hec_Baby_01`
-- Added Portrait for `Portrait_Hec_Frozen_01`
-- Added Codex artwork for Hec
+- Added portrait for `Portrait_Nemesis_Bath_01`
+- Added portrait for `Portrait_Hec_Default_01`
+- Added portrait for `Portrait_Hec_Averted_01`
+- Added portrait for `Portrait_Hec_Baby_01`
+- Added portrait for `Portrait_Hec_Frozen_01`
+- Added codex artwork for Hec
 
 ## [1.1.10] - 2025-11-17
 
 ### Added
 
-- Added Portrait for `Portrait_Nemesis_Default_01`
-- Added Portrait for `Portrait_Nemesis_Flushed_01`
-- Added Portrait for `Portrait_Nemesis_Averted_01`
+- Added portrait for `Portrait_Nemesis_Default_01`
+- Added portrait for `Portrait_Nemesis_Flushed_01`
+- Added portrait for `Portrait_Nemesis_Averted_01`
 
 ## [1.1.9] - 2025-11-16
 
 ### Added
 
-- Added Codex artwork for Artemis
-- Added Codex artwork for Hera
-- Added Codex artwork for Melinoe
+- Added codex artwork for Artemis
+- Added codex artwork for Hera
+- Added codex artwork for Melinoe
 
 ## [1.1.8] - 2025-11-16
 
 ### Changed
 
-- Disabled blink/glow/wiggle effects for Mel Bath artwork
-- Disabled blink/glow/wiggle effects for Mel Bath Shock artwork
-- Disabled wiggle effects for Mel Bath Tears artwork
+- Disabled blink/glow/wiggle effects for Mel bath artwork
+- Disabled blink/glow/wiggle effects for Mel bath Shock artwork
+- Disabled wiggle effects for Mel bath tears artwork
 - Fixed small issue with the `Portrait_Artemis_Serious_01` image
 - Fixed an issue where the `Portrait_Artemis_Default_01` would appear too small.
 
@@ -54,8 +86,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added Portrait for `Portrait_Artemis_Default_01`
-- Added Portrait for `Portrait_Hera_Displeased_01`
+- Added portrait for `Portrait_Artemis_Default_01`
+- Added portrait for `Portrait_Hera_Displeased_01`
 
 ### Changed
 
@@ -66,10 +98,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added Portrait for `Portraits_Melinoe_Bath_01`
-- Added Portrait for `Portraits_Melinoe_Bath_Shock_01`
-- Added Portrait for `Portraits_Melinoe_Bath_Tears_01`
-- Added Codex artwork for Aphrodite
+- Added portrait for `Portraits_Melinoe_Bath_01`
+- Added portrait for `Portraits_Melinoe_Bath_Shock_01`
+- Added portrait for `Portraits_Melinoe_Bath_Tears_01`
+- Added codex artwork for Aphrodite
 
 ## [1.1.4] - 2025-11-02
 
@@ -89,24 +121,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added Portrait for `Portraits_Aphrodite_01`
-- Added Portrait for `Portraits_Aphrodite_Annoyed_01`
-- Added Portrait for `Portraits_Artemis_Serious_01`
-- Added Portrait for `Portraits_Hera_01`
-- Added Portrait for `Portraits_Melinoe_01`
-- Added Portrait for `Portraits_Melinoe_Casual_01`
-- Added Portrait for `Portraits_Melinoe_Empathetic_01`
-- Added Portrait for `Portraits_Melinoe_EmpatheticFlushed_01`
-- Added Portrait for `Portraits_Melinoe_Hesitant_01`
-- Added Portrait for `Portraits_Melinoe_Intense_01`
-- Added Portrait for `Portraits_Melinoe_Pleased_01`
-- Added Portrait for `Portraits_Melinoe_PleasedFlushed_01`
-- Added Portrait for `Portraits_Melinoe_Proud_01`
-- Added Portrait for `Portraits_Melinoe_Vulnerable_01`
-- Added Glit effects for Aphrodite
-- Added Glow effects for Aphrodite
-- Added Wiggle effects for Aphrodite
-- Added Glit effects for Hera
+- Added portrait for `Portraits_Aphrodite_01`
+- Added portrait for `Portraits_Aphrodite_Annoyed_01`
+- Added portrait for `Portraits_Artemis_Serious_01`
+- Added portrait for `Portraits_Hera_01`
+- Added portrait for `Portraits_Melinoe_01`
+- Added portrait for `Portraits_Melinoe_Casual_01`
+- Added portrait for `Portraits_Melinoe_Empathetic_01`
+- Added portrait for `Portraits_Melinoe_EmpatheticFlushed_01`
+- Added portrait for `Portraits_Melinoe_Hesitant_01`
+- Added portrait for `Portraits_Melinoe_Intense_01`
+- Added portrait for `Portraits_Melinoe_Pleased_01`
+- Added portrait for `Portraits_Melinoe_PleasedFlushed_01`
+- Added portrait for `Portraits_Melinoe_Proud_01`
+- Added portrait for `Portraits_Melinoe_Vulnerable_01`
+- Added glit effects for Aphrodite
+- Added glow effects for Aphrodite
+- Added wiggle effects for Aphrodite
+- Added glit effects for Hera
 
 [unreleased]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.11...HEAD
 [1.1.11]: https://github.com/Kuipo/Hades-2-Free-the-Nipple-Edition/compare/1.1.10...1.1.11
