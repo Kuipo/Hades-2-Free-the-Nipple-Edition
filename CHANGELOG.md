@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Replaced the Melinoe bath images with new art
+- Fixed the Hecate bath by disabling the wiggle, blink, and glow effects
+- Fixed Scaling issue with Hecate bath image
+
 ## [1.1.12] - 2025-11-28
 
 ### Added

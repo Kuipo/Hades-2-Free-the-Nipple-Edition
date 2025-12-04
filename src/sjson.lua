@@ -26,6 +26,42 @@ local disabled_animations = {
     Portrait_Odysseus_BathWiggle1                   = true,
     Portrait_Odysseus_Bath_Blink                    = true,
     Portrait_Odysseus_BathGlow                      = true,
+    -- Hecate - Because the bath portrait is modified, we need to block some of the animation effects
+    Portrait_Hecate_BathWiggle1_In                  = true,
+    Portrait_Hecate_BathWiggle1                     = true,
+    Portrait_Hecate_BathWiggle2_In                  = true,
+    Portrait_Hecate_BathWiggle2                     = true,
+    Portrait_Hecate_Bath_Blink                      = true,
+    Portrait_Hecate_BathGlow                        = true,
+    -- I think these sweat effects don't look wrong, so I am leaving them enabled for now
+    -- Portrait_Hecate_Bath_Sweat1a                    = true,
+    -- Portrait_Hecate_Bath_Sweat1b                    = true,
+    -- Portrait_Hecate_Bath_Sweat1c                    = true,
+    -- Portrait_Hecate_Bath_Sweat1d                    = true,
+    -- Portrait_Hecate_Bath_Sweat1e                    = true,
+    -- Portrait_Hecate_Bath_Sweat1f                    = true,
+    -- Portrait_Hecate_Bath_Sweat2a                    = true,
+    -- Portrait_Hecate_Bath_Sweat2b                    = true,
+    -- Portrait_Hecate_Bath_Sweat2c                    = true,
+    -- Portrait_Hecate_Bath_Sweat2d                    = true,
+    -- Portrait_Hecate_Bath_Sweat2e                    = true,
+    -- If we change the unmasked bath portrait later, we can enable these too
+    -- Portrait_HecateUnmasked_BathWiggle1_In          = true,
+    -- Portrait_HecateUnmasked_BathWiggle1             = true,
+    -- Portrait_HecateUnmasked_BathWiggle2_In          = true,
+    -- Portrait_HecateUnmasked_BathWiggle2             = true,
+    -- Portrait_HecateUnmasked_Bath_Blink              = true,
+    -- Portrait_HecateUnmasked_BathGlow                = true,
+    -- I think these sweat effects don't look wrong, so I am leaving them enabled for now
+    -- Portrait_HecateUnmasked_Bath_Sweat1a            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat1b            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat1c            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat1d            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat1e            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat2a            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat2b            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat2c            = true,
+    -- Portrait_HecateUnmasked_Bath_Sweat2d            = true,
 }
 
 function is_animation_disabled(str)
@@ -303,6 +339,7 @@ sjson.hook(gui_portraits_vfx_path, function(data)
         if animation_data.Name == "Portrait_Hec_Bath_01"
         or animation_data.Name == "Portrait_Hec_Bath_01_Exit" then
             animation_data.FilePath = "FreeTheNippleEdition-Hecate\\Portrait_Hec_Bath_01"
+            animation_data.Scale = 1.0 -- experimental fix for this portrait to prevent it from appearing zoomed/smaller. Haven't tested in game yet
         end
 
         -- if animation_data.Name == "Portrait_Hec_Bath_Unveiled_01"
